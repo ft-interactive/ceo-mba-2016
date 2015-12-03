@@ -168,14 +168,14 @@ circle {
 
 
 .ceo-name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 4px;
 }
 
 .key-facts {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .main-profile {
@@ -189,10 +189,10 @@ circle {
 }
 
 .body-text {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -6px;
     margin-right: 8px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 // Media queries
@@ -214,6 +214,17 @@ circle {
   .intro p:first-of-type {
     font-size: 1.5em;
     line-height: 1.2em;
+  }
+  .ceo-name {
+    font-size: 18px;
+  }
+  .key-facts {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .body-text {
+    font-size: 18px;
+    line-height: 24px;
   }
   .labels {
     display: none;
@@ -242,6 +253,9 @@ circle {
   }
   .uni-name {
     font-size: 1.5em;
+  }
+  .ceo-name {
+    font-size: 20px;
   }
 }
 
