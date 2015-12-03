@@ -13,8 +13,8 @@
 
 ////////////////////////////////////////////////////////////////////////
 // FINANCIER TEXT
-// @include oFontsInclude(FinancierTextWeb, $weight: regular, $style: normal);
-// @include oFontsInclude(FinancierTextWeb, $weight: regular, $style: italic);
+@include oFontsInclude(FinancierTextWeb, $weight: regular, $style: normal);
+@include oFontsInclude(FinancierTextWeb, $weight: regular, $style: italic);
 
 ////////////////////////////////////////////////////////////////////////
 // FINANCIER DISPLAY

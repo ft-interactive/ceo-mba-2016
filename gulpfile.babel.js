@@ -18,7 +18,7 @@ const AUTOPREFIXER_BROWSERS = [
   'chrome >= 34',
 ];
 
-const DEPLOY_TARGET = ''; // e.g. 'features/YOUR-PROJECT-NAME'
+const DEPLOY_TARGET = 'demo/sites/2016/ceo-mba-2016'; // e.g. 'features/YOUR-PROJECT-NAME'
 
 const BROWSERIFY_ENTRIES = [
   'scripts/main.js',
@@ -27,6 +27,7 @@ const BROWSERIFY_ENTRIES = [
 const BROWSERIFY_TRANSFORMS = [
   'babelify',
   'debowerify',
+  'hbsfy',
 ];
 
 const OTHER_SCRIPTS = [

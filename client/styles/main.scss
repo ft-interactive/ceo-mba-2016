@@ -1,6 +1,8 @@
+$o-grid-is-silent:  false;
 @import 'o-fonts/main';
 @import 'o-colors/main';
 @import 'o-footer/main';
+@import 'o-grid/main';
 
 @import 'fonts';
 
@@ -27,3 +29,233 @@ body {
     .masthead {
       height: 18px;
     }
+
+h1 {
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+
+.intro p:first-of-type {
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierDisplayWeb);
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0;
+  line-height: 1.3rem;
+}
+
+h4 {
+  font-weight: normal;
+  color: oColorsGetPaletteColor('grey-tint3');
+  font-size: 0.875em;
+}
+.container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    max-width: 972px;
+}
+
+.labels,
+.ceo-num {
+  text-anchor: middle;
+}
+
+.ceo-num {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.labels.always {
+  display: block;
+}
+.category {
+  opacity: 0.6;
+  cursor: pointer;
+  > text {
+    pointer-events: none;
+  }
+}
+circle {
+  opacity: 0.2;
+}
+
+.selected {
+  opacity: 1;
+    transition: opacity 0.3s;
+  > circle {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+}
+
+.footnote {
+  font-size: 13px;
+  color: oColorsGetPaletteColor('grey-tint3');
+}
+
+.methodology {
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierTextWeb);
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.4em;
+  > h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  > h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+//cards css
+
+.bios {
+  font-size: 18px;
+  color: oColorsGetPaletteColor('grey-tint5');
+  margin: 2em 0 0;
+  .event-date {
+    font-size: 12px;
+  }
+}
+
+.card-holder {
+  margin: 0 auto 1.5em;
+  clear: both;
+  display: none;
+  padding: 0 0 0.5em;
+  border-bottom: 1px solid oColorsGetPaletteColor('pink-tint3');
+}
+
+.card-holder > * {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.uni-name-holder {
+  padding: 0;
+}
+
+.uni-name {
+  font-size: 1.25em;
+  font-weight: 200;
+  color: oColorsGetPaletteColor('grey-tint5');
+  border-bottom: 1px solid oColorsGetPaletteColor('pink-tint3');
+  margin-bottom: 0.75em;
+  padding-bottom: 4px;
+}
+
+.card {
+  font-weight: 200;
+}
+
+
+.ceo-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.key-facts {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-profile {
+    margin-top: 14px;
+}
+
+.headshot {
+    float: left;
+    margin-right: 8px;
+    padding-top: 4px;
+}
+
+.body-text {
+    font-size: 18px;
+    margin-top: -6px;
+    margin-right: 8px;
+    line-height: 24px;
+}
+
+// Media queries
+
+@include oGridRespondTo($until: S) {
+  .labels {
+    font-size: 40px;
+  }
+}
+
+.logo {
+  display: none;
+}
+
+@include oGridRespondTo(S) {
+  h1 {
+    font-size: 3em;
+  }
+  .intro p:first-of-type {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  .labels {
+    display: none;
+    font-size: 30px;
+    .always {
+      display: block;
+    }
+  }
+  .ceo-num {
+    font-size: 30px;
+  }
+  .logo {
+    display: block;
+  }
+}
+
+@include oGridRespondTo(M) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  .intro p:first-of-type {
+    font-size: 1.8em;
+  }
+  .uni-name {
+    font-size: 1.5em;
+  }
+}
+
+@include oGridRespondTo(L) {
+  h1 {
+    font-size: 4.5em;
+  }
+  .intro p:first-of-type {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  .uni-name {
+    font-size: 2em;
+  }
+}

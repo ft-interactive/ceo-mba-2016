@@ -9,3 +9,6 @@ rules:
   curly: 0
   comma-dangle: 0
   no-inline-comments: 0
+  no-mixed-spaces-and-tabs: 0
+  no-undef: 0
+  quote-props: 0
