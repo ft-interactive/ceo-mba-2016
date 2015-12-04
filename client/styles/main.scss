@@ -1,8 +1,11 @@
 $o-grid-is-silent:  false;
+$o-buttons-is-silent: false;
 @import 'o-fonts/main';
 @import 'o-colors/main';
 @import 'o-footer/main';
 @import 'o-grid/main';
+@import 'o-hoverable/main';
+@import 'o-buttons/main';
 
 @import 'fonts';
 
@@ -195,6 +198,9 @@ circle {
     line-height: 22px;
 }
 
+.back-to-top {
+  text-align: center;
+}
 // Media queries
 
 @include oGridRespondTo($until: S) {
