@@ -115,6 +115,7 @@ circle {
 
 .methodology {
   font-family: oFontsGetFontFamilyWithFallbacks(FinancierTextWeb);
+  -webkit-font-smoothing: antialiased;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.4em;
   > h2 {
@@ -148,6 +149,7 @@ circle {
   display: none;
   padding: 0 0 0.7em;
   border-bottom: 1px solid oColorsGetPaletteColor('pink-tint3');
+  -webkit-font-smoothing: antialiased;
 }
 
 .card-holder > * {
@@ -284,6 +286,15 @@ circle {
   }
   .card-holder {
     padding: 0 0 1em;
+  }
+  .key-facts {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .body-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 @include oGridRespondTo(L) {
