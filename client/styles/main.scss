@@ -18,6 +18,9 @@ body {
   font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
 }
 
+main {
+  margin: 0 10px;
+}
 
 .site-header {
   padding: 18px 0 14px;
@@ -54,7 +57,16 @@ h4 {
   font-weight: normal;
   color: oColorsGetPaletteColor('grey-tint3');
   font-size: 0.875em;
+  margin: 0 0 10px;
 }
+
+.instruction {
+  color: oColorsGetPaletteColor('claret');
+  font-family: oFontsGetFontFamilyWithFallbacks(FinancierTextWeb);
+  font-style: italic;
+  font-size: 0.75em;
+}
+
 .container {
     display: inline-block;
     position: relative;
@@ -254,6 +266,9 @@ circle {
   h4 {
     font-size: 1em;
   }
+  .instruction {
+    font-size: 14px;
+  }
   .intro p:first-of-type {
     font-size: 1.8em;
   }
@@ -274,6 +289,9 @@ circle {
   }
   h4 {
     font-size: 1.25em;
+  }
+  .instruction {
+    font-size: 18px;
   }
   .uni-name {
     font-size: 2em;
