@@ -143,10 +143,10 @@ circle {
 }
 
 .card-holder {
-  margin: 0 auto 1.5em;
+  margin: 0 auto 0.8em;
   clear: both;
   display: none;
-  padding: 0 0 0.5em;
+  padding: 0 0 0.7em;
   border-bottom: 1px solid oColorsGetPaletteColor('pink-tint3');
 }
 
@@ -282,6 +282,8 @@ circle {
   .ceo-name {
     font-size: 22px;
   }
+  .card-holder {
+    padding: 0 0 1em;
 }
 
 @include oGridRespondTo(L) {
