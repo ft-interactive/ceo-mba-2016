@@ -317,3 +317,11 @@ circle {
     font-size: 24px;
   }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+  .methodology {
+    >h2 {
+      letter-spacing: -0.03em;
+    }
+  }
+}
