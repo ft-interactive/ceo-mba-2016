@@ -183,11 +183,15 @@ circle {
 
 
 .ceo-name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 4px;
 }
 
+.company {
+  font-weight: 600;
+  color: oColorsGetPaletteColor('grey-tint4');
+}
 .key-facts {
     font-size: 16px;
     line-height: 22px;
@@ -234,7 +238,7 @@ circle {
     line-height: 1.2em;
   }
   .ceo-name {
-    font-size: 18px;
+    font-size: 20px;
   }
   .key-facts {
     font-size: 18px;
@@ -276,7 +280,7 @@ circle {
     font-size: 1.5em;
   }
   .ceo-name {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -295,5 +299,8 @@ circle {
   }
   .uni-name {
     font-size: 2em;
+  }
+  .ceo-name {
+    font-size: 24px;
   }
 }
