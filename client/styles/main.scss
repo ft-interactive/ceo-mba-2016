@@ -41,7 +41,7 @@ h1 {
   font-size: 2em;
   text-align: center;
   font-weight: normal;
-  margin: 1rem 0;
+  margin: 0.8rem 0 0.5rem;
 }
 
 .intro p:first-of-type {
@@ -59,7 +59,7 @@ h6 {
   color: oColorsGetPaletteColor('pink-tint5');
   font-weight: 200;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.8em;
   font-size: 0.875em;
   > a {
     text-decoration: none;
@@ -259,6 +259,7 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
 .share-links-holder {
   text-align: center;
+  margin-top: -0.5rem;
 }
 
 .share-links {  
@@ -350,9 +351,13 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 @include oGridRespondTo(M) {
   h1 {
     font-size: 3.5em;
+    margin: 1rem 0;
   }
   h4 {
     font-size: 1em;
+  }
+  h6 {
+    margin-top: 1em;
   }
   .instruction {
     font-size: 14px;
