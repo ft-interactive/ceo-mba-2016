@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var multiplier = 80;
 
   var svg = d3.select('.container').append('svg')
+    .attr('width', '100%')
     .attr('preserveAspectRatio', 'xMinYMin meet')
 		.attr('viewBox', '0 0 972 600')
 
@@ -88,6 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
       d3.selectAll('.' + slug).classed('visible', true);
       var uniName = d3.select(this)[0][0].__data__.name;
       d3.select('.uni-name').text(uniName);
+      d3.selectAll('.uni-small').style('display', 'none');
+      if (slug === 'one' || slug === 'two') {
+        d3.selectAll('.' + slug + ' .uni-small').style('display', 'block');
+      }
     });
 
   function setFirstView(slug) {

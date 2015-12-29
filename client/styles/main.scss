@@ -202,6 +202,13 @@ circle {
   font-weight: 200;
 }
 
+.uni-small {
+  display: none;
+  margin-bottom: 0.3em;
+  font-size: 18px;
+  font-weight: 400;
+  color: oColorsGetPaletteColor('pink-tint5');
+}
 
 .ceo-name {
     font-size: 18px;
@@ -237,6 +244,7 @@ circle {
 
 .back-to-top {
   text-align: center;
+  margin-top: 0.7em;
 }
 
 // share links
@@ -300,7 +308,10 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
 
 }
 
-
+.o-footer__copyright {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
 
 // Media queries
 
@@ -322,7 +333,8 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
     font-size: 1.5em;
     line-height: 1.2em;
   }
-  .ceo-name {
+  .ceo-name,
+  .uni-small {
     font-size: 20px;
   }
   .key-facts {
@@ -371,7 +383,8 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   .uni-name {
     font-size: 1.5em;
   }
-  .ceo-name {
+  .ceo-name,
+  .uni-small {
     font-size: 22px;
   }
   .card-holder {
@@ -403,7 +416,8 @@ $linked-in-logo: 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3
   .uni-name {
     font-size: 2em;
   }
-  .ceo-name {
+  .ceo-name,
+  .uni-small {
     font-size: 24px;
   }
 }
