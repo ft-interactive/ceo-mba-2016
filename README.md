@@ -1,5 +1,8 @@
 # ceo-mba-2016
 
-Responsive update to the existing graphic which can be found here
+Responsive update to the [existing graphic](http://www.ft.com/cms/s/2/61621620-9abc-11e4-8426-00144feabdc0.html#axzz3sUiocWIw)
 
-http://www.ft.com/cms/s/2/61621620-9abc-11e4-8426-00144feabdc0.html#axzz3sUiocWIw
+## Licence
+This software is published by the Financial Times under the [MIT licence](http://opensource.org/licenses/MIT). 
+
+Please note the MIT licence includes only the software, and does not cover any FT content made available using the software, which is copyright &copy; The Financial Times Limited, all rights reserved. For more information about re-publishing FT content, please contact our [syndication department](http://syndication.ft.com/).
