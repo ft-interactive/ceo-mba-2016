@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var categories = spreadsheet.groups;
   console.log(categories);
 
-  var multiplier = 80;
+  var multiplier = 90;
 
   var svg = d3.select('.container').append('svg')
     .attr('width', '100%')
