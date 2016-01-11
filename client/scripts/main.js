@@ -24,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
   methodology.innerHTML = content;
 
   var categories = spreadsheet.groups;
-  console.log(categories);
 
-  var multiplier = 90;
+  var multiplier = spreadsheet.options.circleMultiplier;
 
   var svg = d3.select('.container').append('svg')
     .attr('width', '100%')
